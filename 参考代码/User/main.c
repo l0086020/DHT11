@@ -15,7 +15,6 @@ int main(void)
 			OLED_ShowString(28,2,(uint8_t *)str);
 			sprintf(str,"Humi:%d.%d",DHT_Buffer[0],DHT_Buffer[1]);
 			OLED_ShowString(28,4,(uint8_t *)str);
-			GPIOB->ODR ^= 1<<0;
 		}
 		delay_ms(2000);
 	}
